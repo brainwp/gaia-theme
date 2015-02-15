@@ -762,7 +762,7 @@ body a,
 	width: 96px;
 	height: 4px;
 	background: #928452;
-	margin: 40px auto;
+	margin: 15px 0 35px;
 }
 
 .post-title {
@@ -772,7 +772,7 @@ body a,
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #222;
-	text-align: center;
+	text-align: left;
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 }
