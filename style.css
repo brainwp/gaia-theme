@@ -301,8 +301,8 @@ body a,
 
 
 .header { 
-	padding: 50px 0;
-	margin: 0 auto;
+	padding: 50px 0px 25px;
+	margin: 0px auto 50px;
 	border-bottom: 1px solid #eee;
 	background: url("images/bg-header-bege.jpg") no-repeat scroll center top;
 	position: relative;
@@ -322,12 +322,26 @@ body a,
 	text-align: center;
 }
 
-.blog-title a { color: #928452; }
+.blog-title a { 
+	margin-left: 20%;
+	margin-top: -18px;
+	background: url("images/logo-gaia-header.png") no-repeat scroll center top transparent;
+	text-indent: -9999px;
+	width: 155px;
+	height: 221px;
+	display: block;
+	float: none;
+}
 
 .blog-description {
-	color: #666;
-	margin-top: 15px;
-	text-align: center;
+	margin-right: 20%;
+	margin-top: 46%;
+	background: url("images/logo-saude-header.png") no-repeat scroll center top transparent;
+	text-indent: -9999px;
+	width: 218px;
+	height: 75px;
+	display: block;
+	float: none;
 }
 
 .blog-logo img {
@@ -2725,11 +2739,13 @@ p.developed-by a.logo-brasa {
 		text-align: left; 
 	}
 	
-	.blog-title { font-size: 1.5em; }
+	.blog-title {
+	margin-top: 5%;
+	margin-left: 12%
+	 }
 	
 	.blog-description {
-		margin-top: 10px;
-		font-size: 0.9em;
+		margin-top: -21%;
 	}
 	
 	.blog-logo { float: left; }
@@ -2777,6 +2793,8 @@ p.developed-by a.logo-brasa {
 	.wrapper:after { border-width: 12px; }
 	
 	.section { padding: 45px 0; }
+
+	.blog-description { display: none; }
 	
 	
 	/* Blog --------------------------------------- */
@@ -3100,9 +3118,11 @@ p.developed-by a.logo-brasa {
 	
 	.header { padding: 25px 5%; }
 	
-	.blog-description { display: none; }
-	
 	.blog-logo img { max-height: 40px; }
+
+	.blog-title {
+	margin-left: 6%;
+	}
 	
 	
 	/* Blog --------------------------------------- */

@@ -77,16 +77,14 @@
 							
 				<?php get_bloginfo( 'description' ) || get_bloginfo( 'title' ) ; ?>
 
-	<a class="blog-logo" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>' rel='home'>
-	<img src='<?php echo esc_url( get_theme_mod( 'hoffman_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?>'>
-	</a>
-			
+	<div class="fleft">
 		<h1 class="blog-title">
 			<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'title' ) ); ?></a>
 		</h1>
-
+	</div>
+	<div class="fright">
 		<h3 class="blog-description"><?php echo esc_attr( get_bloginfo( 'description' ) ); ?></h3>
-					
+	</div>		
 						
 				<div class="clear"></div>
 								
