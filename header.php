@@ -16,11 +16,21 @@
 	<body <?php body_class(); ?>>
 	
 		<div class="wrapper" id="wrapper">
-
+		<a class="nav-toggle" href="#">
+			<div class="bars">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="clear"></div>
+			</div>
+			<p>
+				<span class="menu">Menu</span>
+				<span class="close">Fechar</span>					    
+			</p>
+		</a>
 		<div class="navigation bg-blue">
 		
 				<div class="section-inner">
-				
 					<ul class="main-menu">
 						
 						<?php if ( has_nav_menu( 'primary' ) ) {
