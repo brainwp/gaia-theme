@@ -302,8 +302,7 @@ body a,
 
 .header { 
 	padding: 50px 0px 25px;
-	margin: 0px auto 50px;
-	border-bottom: 1px solid #eee;
+	margin: 0px auto;
 	background: url("images/bg-header-bege.jpg") no-repeat scroll center top;
 	position: relative;
 	z-index: 100;
@@ -766,7 +765,7 @@ body a,
 }
 
 .post-title {
-	font-size: 2.5em;
+	font-size: 2.2em;
 	line-height: 120%;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -989,8 +988,7 @@ a.post-quote:hover cite { border-bottom-color: #148AAD !important; }
 
 
 .post-content {
-	font-family: 'Vollkorn', 'Times New Roman', 'Times', serif;
-	font-size: 1.15em;
+	font-size: 1em;
 }
 
 .post-content a { border-bottom: 1px solid #eee; }
@@ -1005,8 +1003,8 @@ a.post-quote:hover cite { border-bottom-color: #148AAD !important; }
 .post-content dl,
 .post-content .wp-caption,
 .post-content pre {
-	line-height: 160%;
-	margin-bottom: 1.3em;
+	line-height: 135%;
+	margin-bottom: 1.1em;
 }
 
 .post-content > *:first-child { margin-top: 0; }
