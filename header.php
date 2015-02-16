@@ -73,7 +73,7 @@
 					
 			</div> <!-- /navigation -->
 	
-			<div class="header">
+			<div class="header" style="background: url('<?php header_image();?>') no-repeat scroll center top transparent;">
 							
 				<?php get_bloginfo( 'description' ) || get_bloginfo( 'title' ) ; ?>
 

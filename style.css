@@ -304,7 +304,6 @@ body a,
 	padding: 50px 0px 25px;
 	margin: 0px auto 50px;
 	border-bottom: 1px solid #eee;
-	background: url("images/bg-header-bege.jpg") no-repeat scroll center top;
 	position: relative;
 	z-index: 100;
 	-webkit-transition: padding 0.4s ease-in-out;

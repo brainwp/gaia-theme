@@ -13,5 +13,12 @@ function gaia_widget_areas_reg() {
 	  'after_widget' => '</div><div class="clear"></div></div>'
 	));	
 }
-
+//add custom header support
+$args = array(
+	'width'         => 1202,
+	'height'        => 280,
+	'default-image' => get_stylesheet_directory_uri() . '/images/bg-header-bege.jpg',
+	'uploads'       => true,
+);
+add_theme_support( 'custom-header', $args );
 ?>
