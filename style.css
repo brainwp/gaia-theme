@@ -358,7 +358,6 @@ body a,
 	position: absolute;
 	left: 5%;
 	top: 50%;
-	margin-top: -5px;
 }
 
 .nav-toggle .bars {
@@ -2760,14 +2759,15 @@ p.developed-by a.logo-brasa {
 	.nav-toggle { 
 		width:100%;
 		position: relative;
-		min-height:20px;
+		padding-top: 20px;
+		min-height: 45px;
 		text-align: center;
 		display:block;
 	}
 	
 	.nav-toggle .bars { 
 		left: auto; 
-		top:25%;
+		top:50%;
 	}
 	
 	.nav-toggle p { 
