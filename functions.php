@@ -6,7 +6,7 @@ function gaia_widget_areas_reg() {
 	register_sidebar(array(
 	  'name' => __( 'Footer D', 'gaia' ),
 	  'id' => 'footer-d',
-	  'description' => __( 'Widgets in this area will be shown in the right column in the footer.', 'hoffman' ),
+	  'description' => __( 'Widgets nessa area aparecerao na coluna direita do Rodape.', 'gaia' ),
 	  'before_title' => '<h3 class="widget-title">',
 	  'after_title' => '</h3>',
 	  'before_widget' => '<div class="widget %2$s"><div class="widget-content">',

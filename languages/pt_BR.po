@@ -1,0 +1,563 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hoffman v1.04\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-02-17 13:54-0300\n"
+"Last-Translator: Diego Rojas <diego@brasa.art.br>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"Language: sv_SE\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ hoffman
+#: 404.php:11
+msgid "Error 404"
+msgstr "Erro 404"
+
+# @ hoffman
+#: 404.php:17
+msgid ""
+"It seems like you have tried to open a page that doesn't exist. It could "
+"have been deleted, moved, or it never existed at all. You are welcome to "
+"search for what you are looking for with the form below."
+msgstr ""
+"Parece que você tentou abrir uma página que não existe. Ela pode ter sido "
+"deletada, movida ou mesmo, não existir. Você pode tentar buscar pelo que "
+"está procurando usando o formulário abaixo. "
+
+# @ hoffman
+#: archive.php:10
+#, php-format
+msgid "Date: %s"
+msgstr "Data: %s"
+
+# @ hoffman
+#: archive.php:12
+#, php-format
+msgid "Month: %s"
+msgstr "Mês: %s"
+
+# @ hoffman
+#: archive.php:12
+msgctxt "F = Month, Y = Year"
+msgid "F Y"
+msgstr "F Y"
+
+# @ hoffman
+#: archive.php:14
+#, php-format
+msgid "Year: %s"
+msgstr "Ano: %s"
+
+# @ hoffman
+#: archive.php:14
+msgctxt "Y = Year"
+msgid "Y"
+msgstr "Y"
+
+# @ hoffman
+#: archive.php:16
+#, php-format
+msgid "Category: %s"
+msgstr "Categoria: %s"
+
+# @ hoffman
+#: archive.php:18
+#, php-format
+msgid "Tag: %s"
+msgstr "Tag: %s"
+
+# @ hoffman
+#: archive.php:21
+#, php-format
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+# @ hoffman
+#: archive.php:23
+msgid "Archive"
+msgstr "Arquivos"
+
+# @ hoffman
+#: archive.php:31 search.php:18 search.php:63
+#, php-format
+msgid "(page %s of %s)"
+msgstr "(página %s de %s)"
+
+# @ hoffman
+#: archive.php:65 index.php:43 search.php:40
+msgid "Older posts"
+msgstr "Posts anteriores"
+
+# @ hoffman
+#: archive.php:67 index.php:45 search.php:42
+msgid "Newer posts"
+msgstr "Posts recentes"
+
+# @ hoffman
+#. gettext fix: identical singular and plural forms found, that may be ambiguous! Please check the code!
+#: comments.php:14 comments.php:95
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] "Comentário"
+msgstr[1] "Comentários"
+
+# @ hoffman
+#: comments.php:18
+msgid "Add yours"
+msgstr "Adcionando seus"
+
+# @ hoffman
+#: comments.php:39
+msgid "Pingback"
+msgid_plural "Pingbacks"
+msgstr[0] "Pingback"
+msgstr[1] "Pingbacks"
+
+# @ hoffman
+#: comments.php:59
+msgid "Older Comments"
+msgstr "Comentários anteriores"
+
+# @ hoffman
+#: comments.php:65
+msgid "Newer Comments"
+msgstr "Comentários recentes"
+
+# @ hoffman
+#: comments.php:81
+msgid "Comments are closed."
+msgstr "Comentários estão desativados"
+
+# @ hoffman
+#: comments.php:103
+msgid "Name"
+msgstr "Nome"
+
+# @ hoffman
+#: comments.php:109
+msgid "Email"
+msgstr "E-mail"
+
+# @ hoffman
+#: comments.php:115
+msgid "Website"
+msgstr "Site"
+
+# @ hoffman
+#: content-gallery.php:30
+msgid "Sticky"
+msgstr "Fixo"
+
+# @ hoffman
+#: footer.php:94
+msgid "Theme by"
+msgstr "Tema por"
+
+# @ hoffman
+#: functions.php:89
+msgid "Footer A"
+msgstr "Widgets A"
+
+# @ hoffman
+#: functions.php:91
+msgid "Widgets in this area will be shown in the left column in the footer."
+msgstr "Widgets nessa área aparecerão na parte inferior direita."
+
+# @ hoffman
+#: functions.php:98
+msgid "Footer B"
+msgstr "Widgets B"
+
+# @ hoffman
+#: functions.php:100
+msgid "Widgets in this area will be shown in the middle column in the footer."
+msgstr "Widgets nessa área aparecerão na parte inferior esquerda."
+
+# @ hoffman
+#: functions.php:107
+msgid "Footer C"
+msgstr "Rodapé C"
+
+# @ hoffman
+#: functions.php:109
+msgid "Widgets in this area will be shown in the right column in the footer."
+msgstr "Widgets nessa área aparecerão na coluna esquerda do Rodapé."
+
+# @ hoffman
+#: functions.php:161
+#, php-format
+msgid "Page %s"
+msgstr "Página %s"
+
+# @ hoffman
+#: functions.php:366
+msgid "Pingback:"
+msgstr "Pingback:"
+
+# @ hoffman
+#: functions.php:366
+msgid "(Edit)"
+msgstr "(Editar)"
+
+# @ hoffman
+#: functions.php:385
+msgid "Comment by post author"
+msgstr "Comentário por autor de post"
+
+# @ hoffman
+#: functions.php:399
+msgid "Your comment is awaiting moderation."
+msgstr "Seu comentário está aguardando moderação"
+
+# @ hoffman
+#: content-gallery.php:32 content-video.php:50 content.php:44
+#: functions.php:417 single.php:99
+msgid "Edit"
+msgstr "Editar"
+
+# @ hoffman
+#: functions.php:422
+msgid "Reply"
+msgstr "Responder"
+
+# @ hoffman
+#: functions.php:585 functions.php:614
+msgid "Logo"
+msgstr "Logo"
+
+# @ hoffman
+#: functions.php:606
+msgid "Accent Color"
+msgstr "Cor em destaque"
+
+# @ hoffman
+#: header.php:57
+msgid "Menu"
+msgstr "Menu"
+
+# @ hoffman
+#: searchform.php:2
+msgid "Search form"
+msgstr "Formulário de busca"
+
+# @ hoffman
+#: image.php:45 page.php:60 single.php:388 template-archive.php:113
+#: template-fullwidth.php:66
+msgid "We couldn't find any posts that matched your query. Please try again."
+msgstr ""
+"Não encontramos resultados através de seus critérios de busca. Tente "
+"novamente."
+
+# @ hoffman
+#: index.php:19
+#, php-format
+msgid "Page %s of %s"
+msgstr "Página %s de %s"
+
+# @ hoffman
+#: search.php:11 search.php:56
+msgid "Search results:"
+msgstr "Resultados da busca:"
+
+# @ hoffman
+#: search.php:75
+msgid "No results. Try again, would you kindly?"
+msgstr "Sem resultados. Tente de novo por favor."
+
+# @ hoffman
+#: single.php:206
+msgid "Next post:"
+msgstr "Próximo Post:"
+
+# @ hoffman
+#: single.php:217
+msgid "Previous post:"
+msgstr "Post Anterior:"
+
+# @ hoffman
+#: content-gallery.php:11 content-quote.php:8 content-video.php:31
+#: content.php:25
+msgid "Sticky post"
+msgstr "Post fixo"
+
+# @ hoffman
+#: footer.php:92
+msgid "All rights reserved."
+msgstr "Todos os direitos reservados."
+
+# @ hoffman
+#: functions.php:31
+msgid "Primary Menu"
+msgstr "Menu principal"
+
+# @ hoffman
+#: functions.php:32
+msgid "Social Menu"
+msgstr "Menu Redes Sociais"
+
+# @ hoffman
+#: functions.php:184
+msgid "Read more"
+msgstr "Leia Mais"
+
+# @ hoffman
+#: functions.php:391
+msgid "says:"
+msgstr "disse:"
+
+# @ hoffman
+#: functions.php:451 widgets/video.php:70
+msgid "Video URL"
+msgstr "Vídeo URL"
+
+# @ hoffman
+#: functions.php:452
+msgid "Quote content"
+msgstr "Conteúdo da citação"
+
+# @ hoffman
+#: functions.php:453
+msgid "Quote attribution"
+msgstr "Atribuição da citação"
+
+# @ hoffman
+#: header.php:44
+msgid "Click to view the navigation"
+msgstr "Clique para ver a navegação"
+
+# @ hoffman
+#: header.php:58
+msgid "Close"
+msgstr "Fechar"
+
+# @ hoffman
+#: page.php:36 single.php:113 template-fullwidth.php:42
+msgid "Pages:"
+msgstr "Páginas:"
+
+# @ hoffman
+#: single.php:142
+msgid "Comments"
+msgstr "Comentários"
+
+# @ hoffman
+#: single.php:148
+msgid "Post info"
+msgstr "Informações do Post"
+
+# @ hoffman
+#: single.php:154
+msgid "Author info"
+msgstr "INformações do autor"
+
+# @ hoffman
+#: single.php:207
+msgid "Next post"
+msgstr "Próximo Post"
+
+# @ hoffman
+#: single.php:218
+msgid "Previous post"
+msgstr "Post Anterior"
+
+# @ hoffman
+#: template-archive.php:31
+msgid "Posts"
+msgstr "Posts"
+
+# @ hoffman
+#: template-archive.php:47
+msgid "Categories"
+msgstr "Categorias"
+
+# @ hoffman
+#: template-archive.php:51
+msgid "Tags"
+msgstr "Tags"
+
+# @ hoffman
+#: template-archive.php:58
+#, php-format
+msgid "View all posts in %s"
+msgstr "Veja todos os posts em %s"
+
+# @ hoffman
+#: template-archive.php:65
+msgid "Contributors"
+msgstr "Contribuidores"
+
+# @ hoffman
+#: template-archive.php:71
+msgid "Archives by Year"
+msgstr "Arquivos por Ano"
+
+# @ hoffman
+#: template-archive.php:77
+msgid "Archives by Month"
+msgstr "Arquivos por Mês"
+
+# @ hoffman
+#: template-archive.php:83
+msgid "Archives by Day"
+msgstr "Arquivos por Dia"
+
+# @ hoffman
+#: widgets/dribbble.php:10
+msgid "Displays your latest Dribbble photos."
+msgstr "Mostre suas últimas fotos do Dribbble."
+
+# @ hoffman
+#: widgets/dribbble.php:77 widgets/flickr.php:56 widgets/video.php:64
+msgid "Title"
+msgstr "Título"
+
+# @ hoffman
+#: widgets/dribbble.php:83
+msgid "Dribbble username"
+msgstr "Usuário Dribbble"
+
+# @ hoffman
+#: widgets/dribbble.php:89 widgets/flickr.php:68
+msgid "Number of images to display:"
+msgstr "Números de imagens para exibir:"
+
+# @ hoffman
+#: widgets/flickr.php:8
+msgid "Displays your latest Flickr photos."
+msgstr "Mostre suas últimas fotos do Flickr."
+
+# @ hoffman
+#: widgets/flickr.php:62
+msgid ""
+"Flickr ID (use <a target=\"_blank\" href=\"http://www.idgettr.com\">idGettr</"
+"a>):"
+msgstr ""
+"ID do Flickr (use <a target=\"_blank\" href=\"http://www.idgettr.com"
+"\">idGettr</a>):"
+
+# @ hoffman
+#: widgets/recent-comments.php:6
+msgid "Displays recent comments with user avatars."
+msgstr "Mostre comentários recenetes com avatares dos usuários."
+
+# @ hoffman
+#: widgets/recent-comments.php:50
+msgid "Comment to"
+msgstr "Comentário para"
+
+# @ hoffman
+#: widgets/recent-comments.php:90
+msgid "Widget title:"
+msgstr "Título do Widget:"
+
+# @ hoffman
+#: widgets/recent-comments.php:95
+msgid "Number of comments to display:"
+msgstr "Número de comentários para exibir:"
+
+# @ hoffman
+#: widgets/recent-comments.php:97 widgets/recent-posts.php:122
+msgid "Defaults to 5 if empty"
+msgstr "Padrão é 5 se vazio"
+
+# @ hoffman
+#: widgets/recent-posts.php:6
+msgid "Displays recent entries with thumbnails (optional)."
+msgstr "Mostrar posts recentes com imagens destacadas (opcional)"
+
+# @ hoffman
+#: widgets/recent-posts.php:115
+msgid "Widget title"
+msgstr "Título do Widget"
+
+# @ hoffman
+#: widgets/recent-posts.php:120
+msgid "Number of posts to display:"
+msgstr "Número de posts para exibir:"
+
+# @ hoffman
+#: widgets/recent-posts.php:127
+msgid "Show featured images"
+msgstr "Mostrar imagens destacadas"
+
+# @ hoffman
+#: widgets/video.php:8
+msgid "Displays a video of your choosing."
+msgstr "Mostre um vídeo de sua escolha"
+
+# @ hoffman
+#: functions.php:577
+msgid "Hoffman Options"
+msgstr "Opções do tema"
+
+# @ hoffman
+#: functions.php:580
+msgid "Allows you to customize theme settings for Hoffman."
+msgstr "Permite que você customize opções do tema Hoffman"
+
+# @ hoffman
+#: content-gallery.php:26 content-video.php:46 content.php:40 single.php:95
+#: widgets/recent-posts.php:76 widgets/recent-posts.php:83
+msgid "0 Comments"
+msgstr "0 Comentários"
+
+# @ hoffman
+#: content-gallery.php:26 content-video.php:46 content.php:40 single.php:95
+#: widgets/recent-posts.php:76 widgets/recent-posts.php:83
+msgid "1 Comment"
+msgstr "1 Comentário"
+
+# @ hoffman
+#: content-gallery.php:26 content-video.php:46 content.php:40 single.php:95
+#: widgets/recent-posts.php:76 widgets/recent-posts.php:83
+msgid "% Comments"
+msgstr "% Comentários"
+
+# @ hoffman
+#: single.php:248
+msgid "Administrator"
+msgstr "Administrador"
+
+# @ hoffman
+#: single.php:250
+msgid "Editor"
+msgstr "Editor"
+
+# @ hoffman
+#: single.php:252
+msgid "Author"
+msgstr "Autor"
+
+# @ hoffman
+#: single.php:254
+msgid "Contributor"
+msgstr "Contribuidor"
+
+# @ hoffman
+#: single.php:256
+msgid "Subscriber"
+msgstr "Assinante"
+
+# @ hoffman
+#: single.php:258
+msgid "Guest"
+msgstr "Visitante"
+
+# @ hoffman
+#: functions.php:587
+msgid ""
+"Upload a logo to replace the default site name and description in the header"
+msgstr ""
+"Suba um logo para substituir o nome do site e a descrição no cabeçalho "
+"(DESATIVADO)"
