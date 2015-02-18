@@ -93,7 +93,7 @@ body {
 	padding: 0;
 	border: none;
 	color: #333;
-	background: url("images/bg-geral.jpg") no-repeat scroll center top transparent;
+	background: #FFF;
 	font-family: 'Raleway', sans-serif;
 	font-size: 18px;
 	-webkit-text-size-adjust: 100%;
@@ -234,7 +234,7 @@ body a,
 	position: relative;
 }
 
-.section-inner.thin { width: 700px; }
+.section-inner.thin { width: 750px; }
 
 .medium-padding { padding: 60px 0; }
 .small-padding { padding: 45px 0; }
@@ -334,11 +334,11 @@ body a,
 
 .blog-description {
 	margin-right: 20%;
-	margin-top: 46%;
+	margin-top: 48%;
 	background: url("images/logo-saude-header.png") no-repeat scroll center top transparent;
 	text-indent: -9999px;
 	width: 218px;
-	height: 75px;
+	height: 72px;
 	display: block;
 	float: none;
 }
@@ -513,7 +513,7 @@ body a,
 /* -------------------------------------------------------------------------------- */
 
 
-.navigation { font-size: 0.85em; }
+.navigation { font-size: 0.8em; }
 
 .main-menu li { position: relative; }
 
@@ -524,9 +524,9 @@ body a,
 
 .main-menu > li > a {
 	display: inline-block;
-	padding: 28px 18px;
+	padding: 22px 18px;
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: 300;
 	color: #DDD;
 }
 
@@ -551,7 +551,7 @@ body a,
 
 .main-menu .active a,
 .main-menu li:hover > a { 
-	font-weight: 600;
+	font-weight: 300;
 	color: #fff;
 }
 
@@ -987,7 +987,7 @@ a.post-quote:hover cite { border-bottom-color: #148AAD !important; }
 
 
 .post-content {
-	font-size: 1em;
+	font-size: 0.9em;
 }
 
 .post-content a { border-bottom: 1px solid #eee; }
@@ -1002,8 +1002,8 @@ a.post-quote:hover cite { border-bottom-color: #148AAD !important; }
 .post-content dl,
 .post-content .wp-caption,
 .post-content pre {
-	line-height: 135%;
-	margin-bottom: 1.1em;
+	line-height: 140%;
+	margin-bottom: 1em;
 }
 
 .post-content > *:first-child { margin-top: 0; }
