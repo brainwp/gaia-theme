@@ -1,16 +1,15 @@
-<?php get_header(); ?>
+<?php 
 
-<div class="content">	
+/**
+ * Template Name: Sem Titulo
+ *
+ *
+ * @package Gaia
+ */
 
-	<div class="section-inner thin top-title">
-												
-		<div class="post-header">
-																								
-			<h2 class="post-title"><?php the_title(); ?></h2>
-													
-		</div> <!-- /post-header section -->
+get_header(); ?>
 
-	</div>	
+<div class="content">		
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>				
 	
@@ -28,8 +27,8 @@
 					
 			<?php endif; ?>
 			
-			<div class="post-inner section-inner thin">
-														    
+			<div class="post-inner section-inner">
+				    
 			    <div class="post-content">
 			    
 			    	<?php the_content(); ?>

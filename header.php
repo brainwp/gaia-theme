@@ -93,7 +93,7 @@
 		</h1>
 	</div>
 	<div class="fright">
-		<h3 class="blog-description"><?php echo esc_attr( get_bloginfo( 'description' ) ); ?></h3>
+		<div class="blog-description"><?php echo esc_attr( get_bloginfo( 'description' ) ); ?></div>
 	</div>		
 						
 				<div class="clear"></div>

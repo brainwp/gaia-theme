@@ -524,7 +524,7 @@ body a,
 
 .main-menu > li > a {
 	display: inline-block;
-	padding: 22px 18px;
+	padding: 18px 18px;
 	text-transform: uppercase;
 	font-weight: 300;
 	color: #DDD;
@@ -560,14 +560,14 @@ body a,
 
 
 .main-menu ul { 
-	padding-top: 20px;
+	padding-top: 8px;
 	margin-left: -110px;
 	position: absolute;
 	z-index: 150;
 	-webkit-opacity: 0;
 	-moz-opacity: 0;
 	opacity: 0;
-	top: 61px;
+	top: 60px;
 	left: -9999px;
 	-webkit-transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
 	-moz-transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
@@ -591,7 +591,7 @@ body a,
 	border: 10px solid transparent;
 	border-bottom-color: #2A495D !important;
 	position: absolute;
-	top: 0;
+	top: -12px;
 	left: 50%;
 	margin-left: -10px;
 }
@@ -753,6 +753,9 @@ body a,
 
 /* Post header --------------------------------------- */
 
+#posts {
+	margin-top: 35px;
+}
 
 .post-header:after {
 	content: "";
@@ -761,6 +764,11 @@ body a,
 	height: 4px;
 	background: #2A495D !important;
 	margin: 15px 0 35px;
+}
+
+.post-comments {
+	display: block;
+	margin: -5px 0 35px;
 }
 
 .post-title {
@@ -773,6 +781,10 @@ body a,
 	text-align: left;
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
+}
+
+.top-title {
+	margin-top: 35px;
 }
 
 .post-title a { color: #222; }
@@ -2533,7 +2545,10 @@ img#wpstats { display: none !important; } /* silly wp stats :) */
 .credits .fright { max-width: 100%; }
 
 
-.credits-menu { margin-bottom: 50px; }
+.credits-menu { 
+	margin-bottom: 50px;
+	margin-right: 250px;
+ }
 
 .credits-menu li { 
 	float: left; 

@@ -1,4 +1,11 @@
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="section-inner thin">	
+		<div class="post-header">
+		   	 <h2 class="post-title">
+				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+			</h2>    	    
+		</div> <!-- /post-header -->
+	</div>
 
 	<?php if ( has_post_thumbnail() ) : ?>
 	
@@ -28,7 +35,7 @@
 	
 	<div class="post-inner section-inner thin">
 		
-		<div class="post-header">
+		<div class="post-comments">
 			
 			<div class="post-meta top">
 			
@@ -44,10 +51,8 @@
 				<?php edit_post_link( __('Edit','hoffman'), '<span class="sep">/</span> ', ''); ?>
 				
 			</div>
-			
-		    <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-		    	    
-		</div> <!-- /post-header -->
+				    	    
+		</div> <!-- /post-comments -->
 		
 		<div class="post-content">
 		

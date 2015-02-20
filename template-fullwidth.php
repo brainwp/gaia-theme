@@ -1,7 +1,13 @@
+<?php
+/*
+Template Name: Full Width Template
+*/
+?>
+
 <?php get_header(); ?>
 
-<div class="content">	
-
+<div class="content">		
+	
 	<div class="section-inner thin top-title">
 												
 		<div class="post-header">
@@ -28,8 +34,8 @@
 					
 			<?php endif; ?>
 			
-			<div class="post-inner section-inner thin">
-														    
+			<div class="post-inner section-inner">
+				    
 			    <div class="post-content">
 			    
 			    	<?php the_content(); ?>
