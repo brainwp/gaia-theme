@@ -82,7 +82,8 @@
 				</div> <!-- /section-inner -->
 					
 			</div> <!-- /navigation -->
-	
+		<div class="section-inner antimenu">
+		</div>
 			<div class="header" style="background: url('<?php header_image();?>') no-repeat scroll center top transparent;">
 							
 				<?php get_bloginfo( 'description' ) || get_bloginfo( 'title' ) ; ?>

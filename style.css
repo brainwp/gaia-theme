@@ -301,7 +301,7 @@ body a,
 
 
 .header { 
-	padding: 50px 0px 25px;
+	padding: 50px 40px 25px;
 	margin: 0px auto;
 	border-bottom: 1px solid #eee;
 	position: relative;
@@ -322,7 +322,6 @@ body a,
 }
 
 .blog-title a { 
-	margin-left: 20%;
 	margin-top: -18px;
 	background: url("images/logo-gaia-header.png") no-repeat scroll center top transparent;
 	text-indent: -9999px;
@@ -333,8 +332,7 @@ body a,
 }
 
 .blog-description {
-	margin-right: 20%;
-	margin-top: 48%;
+	margin-top: 130px;
 	background: url("images/logo-saude-header.png") no-repeat scroll center top transparent;
 	text-indent: -9999px;
 	width: 218px;
@@ -513,7 +511,19 @@ body a,
 /* -------------------------------------------------------------------------------- */
 
 
-.navigation { font-size: 0.8em; }
+.navigation { 
+	font-size: 0.8em;
+	position: fixed;
+	z-index: 300;
+	width: 100%;
+	max-width: 1200px;
+ }
+
+.antimenu {
+	width: 100%;
+	display: block;
+	padding: 25px;
+}
 
 .main-menu li { position: relative; }
 
@@ -1432,7 +1442,7 @@ abbr, acronym { cursor: help; }
 .post-content input[type="reset"],
 .post-content input[type="button"] {
 	padding: 12px 16px;
-	margin: 0;
+	margin: 20px 0px;
 	border: none;
 	border-radius: 3px;
 	background: #333;
@@ -2800,6 +2810,10 @@ p.developed-by a.logo-brasa {
 	
 	.navigation,#wpadminbar{
 		display:none;
+	}
+
+	.antimenu {
+		display: none;
 	}
 
 }
