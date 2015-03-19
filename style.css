@@ -677,7 +677,7 @@ body a,
 .page + .post,
 .infinite-wrap .post:first-child { border-top: 1px solid #eee; }
 
-.post-inner { padding: 70px 0; }
+.post-inner { padding: 40px 0 60px; }
 
 
 /* Featured media --------------------------------------- */
@@ -767,13 +767,19 @@ body a,
 	margin-top: 35px;
 }
 
+.post-header {
+
+	margin-top: 40px;
+
+}
+
 .post-header:after {
 	content: "";
 	display: block;
 	width: 96px;
 	height: 4px;
 	background: #2A495D !important;
-	margin: 15px 0 35px;
+	margin: 15px 0;
 }
 
 .post-comments {
@@ -2595,7 +2601,7 @@ img#wpstats { display: none !important; } /* silly wp stats :) */
 .credits p.developed-by {
 
 	color: #FFF;
-	font-size: 0.7em;
+	font-size: 0.6em;
 	margin-top: 26%;
 }
 
@@ -2699,35 +2705,7 @@ p.developed-by a.logo-brasa {
 	
 	.wrapper:after { border-width: 16px; }
 	
-	
-	/* Navigation --------------------------------------- */
-	
-	
-	.main-menu { display: none; }
-	
-	.mobile-menu { 
-		display: block; 
-		padding: 20px 0;
-	}
-	
-	.mobile-menu li { margin-top: 10px; }
-	.mobile-menu > li:first-child { margin-top: 0; }
-	
-	.mobile-menu a {
-		display: block;
-		padding: 10px 0;
-		font-weight: 700;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		color: #999;
-	}
-	
-	.mobile-menu .current_menu_item a,
-	.mobile-menu .current_page_item a,
-	.mobile-menu a:hover { color: #fff; }
-	
-	.mobile-menu li li { margin-left: 30px; }
-	
+
 	
 	/* Post formats --------------------------------------- */
 	
@@ -2760,6 +2738,34 @@ p.developed-by a.logo-brasa {
 }
 
 @media (max-width: 750px) {
+
+	/* Navigation --------------------------------------- */
+	
+	
+	.main-menu { display: none; }
+	
+	.mobile-menu { 
+		display: block; 
+		padding: 20px 0;
+	}
+	
+	.mobile-menu li { margin-top: 10px; }
+	.mobile-menu > li:first-child { margin-top: 0; }
+	
+	.mobile-menu a {
+		display: block;
+		padding: 10px 0;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: #999;
+	}
+	
+	.mobile-menu .current_menu_item a,
+	.mobile-menu .current_page_item a,
+	.mobile-menu a:hover { color: #fff; }
+	
+	.mobile-menu li li { margin-left: 30px; }
 	
 	
 	/* Header --------------------------------------- */
@@ -2779,7 +2785,7 @@ p.developed-by a.logo-brasa {
 	 }
 	
 	.blog-description {
-		margin-top: -21%;
+		display: none;
 	}
 	
 	.blog-logo { float: left; }
