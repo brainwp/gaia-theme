@@ -28,7 +28,7 @@
 				<?php while (have_posts()) : the_post(); ?>
 		    	
 
-			<div class="post-inner section-inner thin">
+			<div class="result-inner section-inner thin">
 			   				        			        		                
 				<div class="post-content">
 	
