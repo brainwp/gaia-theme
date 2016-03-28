@@ -7,7 +7,7 @@
 		<meta http-equiv="Content-type" content="text/html;charset=<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
 																		
-		<title><?php wp_title('|', true, 'right'); ?></title>
+		<title><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>  <?php wp_title('|', true, 'left'); ?></title>
 		 
 		<?php wp_head(); ?>
 	
