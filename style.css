@@ -2185,6 +2185,15 @@ div.comment {
 .page-template-page-home .resumo p {
 	line-height: 1.8;
 	text-align: center;
+}.page-template-page-home .loop .post-meta.top {
+	font-size: 0.8em;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.page-template-page-home .loop p {
+	font-size: 0.8em;
+	line-height: 1.2;
+	margin: 15px auto;
 }
 
 /* -------------------------------------------------------------------------------- */

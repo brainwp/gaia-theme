@@ -40,18 +40,45 @@ get_header(); ?>
 					</div> <!-- /post-header section -->
 				</div>
 				<div class="loop">
-					
-					<div class="each">
-						<div class="thumb">
-							
-						</div><!-- thumb -->
-						<div class="post">
-							<h3>Título da Postagem</h3>
-							<span class="category">Categoria</span>
-							<?php the_excerpt(); ?>
-							<a href="">+</a>
-						</div>
-					</div><!-- each -->
+
+					<?php
+						$args = array(
+							'post_type' => 'post',
+							'posts_per_page' => 2,
+							'post_status' => 'publish'
+						);
+						$blog = new WP_Query( $args );
+						if ( $blog->have_posts() ) : ?>
+							<?php while( $blog->have_posts() ) : $blog->the_post(); ?>
+							<?php $categorias = get_the_category();	?>
+
+								<div class="each col-sm-12">
+									<div class="thumb">
+										
+									</div><!-- thumb -->
+									<div class="post">
+										<h3><?php the_title(); ?></h3>
+										<div class="post-meta top">
+											<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_time(get_option('date_format')); ?></a>
+											<span class="sep">/</span>
+											<a href="<?php echo esc_url( get_category_link( $categorias[0]->term_id ) ); ?>" title="<?php echo esc_html( $categorias[0]->name ); ?>"><?php echo esc_html( $categorias[0]->name ); ?></a>
+											
+											<?php 
+												if ( comments_open() ) {
+													echo '<span class="sep">/</span> '; 
+													comments_popup_link( __( '0 Comments', 'hoffman' ), __( '1 Comment', 'hoffman' ), __( '% Comments', 'hoffman' ) );
+												}
+											?> 
+											
+											<?php edit_post_link( __( 'Edit', 'hoffman' ), '<span class="sep">/</span> ', ''); ?>
+										</div><!-- /post-meta top -->
+									</div> <!-- /post -->
+									<?php the_excerpt(); ?>
+									<a href="<?php the_permalink(); ?>">+</a>
+								</div><!-- each -->
+								
+							<?php endwhile; ?>
+						<?php endif; ?>
 
 				</div><!-- loop -->
 			</div>
