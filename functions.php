@@ -1,4 +1,16 @@
 <?php
+
+/**
+ * Load site scripts and styles.
+ */
+function gaia_enqueue_scripts() {
+	$template_url = get_stylesheet_directory_uri();
+	if ( is_home() || is_front_page() || is_page( 'home' ) ) {
+		wp_enqueue_style( 'grid12', $template_url . '/assets/css/grid12.css', array(), null, 'all' );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'gaia_enqueue_scripts', 1 );
+
 //add footer widget areas
 add_action( 'widgets_init', 'gaia_widget_areas_reg' ); 
 
@@ -21,4 +33,3 @@ $args = array(
 	'uploads'       => true,
 );
 add_theme_support( 'custom-header', $args );
-?>
