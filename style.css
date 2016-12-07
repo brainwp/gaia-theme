@@ -82,6 +82,10 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
+.nopadding {
+	padding-left: 0;
+	padding-right: 0;
+}
 
 /* -------------------------------------------------------------------------------- */
 /*	1. Document setup
@@ -2140,9 +2144,7 @@ div.comment {
 /*	13.	Page & Page Templates
 /* -------------------------------------------------------------------------------- */
 
-
 /* Archive template --------------------------------------- */
-
 .posts-archive-list span {
 	margin-left: 5px;
 	font-family: 'Raleway', sans-serif;
@@ -2185,15 +2187,43 @@ div.comment {
 .page-template-page-home .resumo p {
 	line-height: 1.8;
 	text-align: center;
-}.page-template-page-home .loop .post-meta.top {
-	font-size: 0.8em;
+}
+.page-template-page-home .loop .post-meta.top {
+	font-size: 0.7em;
 	margin-bottom: 10px;
 	margin-top: 10px;
+}
+.page-template-page-home .loop .corpo {
+	background-color: #f1f1f1;
+	display: block;
+	max-height: 150px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.page-template-page-home .loop .corpo .degrade {
+	background: url( 'images/degrade-post.png' ) center bottom repeat-x;
+	height: 150px;
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+}
+.page-template-page-home .loop .thumb {
+	float: left;
+	height: 150px;
+	margin-right: 15px;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	width: 150px;
+}
+.page-template-page-home .loop .thumb img {
+	max-width: 100%;
 }
 .page-template-page-home .loop p {
 	font-size: 0.8em;
 	line-height: 1.2;
-	margin: 15px auto;
+	margin: 15px;
 }
 
 /* -------------------------------------------------------------------------------- */

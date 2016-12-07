@@ -53,10 +53,7 @@ get_header(); ?>
 							<?php $categorias = get_the_category();	?>
 
 								<div class="each col-sm-12">
-									<div class="thumb">
-										
-									</div><!-- thumb -->
-									<div class="post">
+									<div class="col-sm-12 nopadding">
 										<h3><?php the_title(); ?></h3>
 										<div class="post-meta top">
 											<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_time(get_option('date_format')); ?></a>
@@ -72,9 +69,19 @@ get_header(); ?>
 											
 											<?php edit_post_link( __( 'Edit', 'hoffman' ), '<span class="sep">/</span> ', ''); ?>
 										</div><!-- /post-meta top -->
-									</div> <!-- /post -->
-									<?php the_excerpt(); ?>
-									<a href="<?php the_permalink(); ?>">+</a>
+									</div>
+									<div class="corpo">
+										<div class="thumb nopadding">
+											<?php if ( has_post_thumbnail() ): ?>
+												<?php the_post_thumbnail( 'thumbnail' ); ?>
+											<?php else: ?>
+												<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/thumbnail-default.jpg" alt="<?php the_title(); ?>">
+											<?php endif ?>										
+										</div><!-- thumb -->
+										<div class="degrade"></div><!-- degrade -->
+										<?php echo gaia_excerpt( 60 ); ?>
+										<a href="<?php the_permalink(); ?>">+</a>
+									</div> <!-- /corpo -->
 								</div><!-- each -->
 								
 							<?php endwhile; ?>
