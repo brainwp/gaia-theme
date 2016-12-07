@@ -54,7 +54,9 @@ get_header(); ?>
 
 								<div class="each col-sm-12">
 									<div class="col-sm-12 nopadding">
-										<h3><?php the_title(); ?></h3>
+										<a href="<?php the_permalink(); ?>">
+											<h3><?php the_title(); ?></h3>
+										</a>
 										<div class="post-meta top">
 											<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_time(get_option('date_format')); ?></a>
 											<span class="sep">/</span>
@@ -72,13 +74,17 @@ get_header(); ?>
 									</div>
 									<div class="corpo">
 										<div class="thumb nopadding">
-											<?php if ( has_post_thumbnail() ): ?>
-												<?php the_post_thumbnail( 'thumbnail' ); ?>
-											<?php else: ?>
-												<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/thumbnail-default.jpg" alt="<?php the_title(); ?>">
-											<?php endif ?>										
+											<a href="<?php the_permalink(); ?>">
+												<?php if ( has_post_thumbnail() ): ?>
+													<?php the_post_thumbnail( 'thumbnail' ); ?>
+												<?php else: ?>
+													<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/thumbnail-default.jpg" alt="<?php the_title(); ?>">
+												<?php endif ?>
+											</a>
 										</div><!-- thumb -->
-										<div class="degrade"></div><!-- degrade -->
+										<a href="<?php the_permalink(); ?>">
+											<div class="degrade"></div><!-- degrade -->
+										</a>
 										<?php echo gaia_excerpt( 60 ); ?>
 										<a href="<?php the_permalink(); ?>">+</a>
 									</div> <!-- /corpo -->

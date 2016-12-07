@@ -2188,8 +2188,12 @@ div.comment {
 	line-height: 1.8;
 	text-align: center;
 }
+.page-template-page-home .loop .each {
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
 .page-template-page-home .loop .post-meta.top {
-	font-size: 0.7em;
+	font-size: 0.6em;
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
@@ -2208,6 +2212,9 @@ div.comment {
 	z-index: 2;
 	width: 100%;
 }
+.page-template-page-home .loop h3 {
+	font-size: 28px;
+}
 .page-template-page-home .loop .thumb {
 	float: left;
 	height: 150px;
@@ -2222,7 +2229,7 @@ div.comment {
 }
 .page-template-page-home .loop p {
 	font-size: 0.8em;
-	line-height: 1.2;
+	line-height: 150%;
 	margin: 15px;
 }
 
