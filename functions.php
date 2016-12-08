@@ -16,6 +16,15 @@ add_action( 'widgets_init', 'gaia_widget_areas_reg' );
 
 function gaia_widget_areas_reg() {
 	register_sidebar(array(
+	  'name' => __( 'Home Redes Sociais', 'gaia' ),
+	  'id' => 'home-rede-sociais',
+	  'description' => __( 'Widgets nessa area aparecerao na Home.', 'gaia' ),
+	  'before_title' => '<h3 class="widget-title">',
+	  'after_title' => '</h3>',
+	  'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
+	  'after_widget' => '</div><div class="clear"></div></div>'
+	));
+	register_sidebar(array(
 	  'name' => __( 'Footer D', 'gaia' ),
 	  'id' => 'footer-d',
 	  'description' => __( 'Widgets nessa area aparecerao na coluna direita do Rodape.', 'gaia' ),
@@ -23,7 +32,7 @@ function gaia_widget_areas_reg() {
 	  'after_title' => '</h3>',
 	  'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
 	  'after_widget' => '</div><div class="clear"></div></div>'
-	));	
+	));
 }
 //add custom header support
 $args = array(
