@@ -85,7 +85,7 @@ get_header(); ?>
 										<a href="<?php the_permalink(); ?>">
 											<div class="degrade"></div><!-- degrade -->
 										</a>
-										<?php echo gaia_excerpt( 60 ); ?>
+										<?php the_excerpt(); ?>
 										<a class="mais" href="<?php the_permalink(); ?>">+</a>
 									</div> <!-- /corpo -->
 								</div><!-- each -->
