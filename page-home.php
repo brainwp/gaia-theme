@@ -101,6 +101,12 @@ get_header(); ?>
 						<h3 class="post-title"><?php _e( 'Redes Sociais', 'hoffman' ); ?></h3>
 					</div> <!-- /post-header section -->
 				</div>
+
+				<?php
+				  	dynamic_sidebar( 'home-rede-sociais' );
+				?>
+
+
 			</div>
 		</div><!-- row -->
 

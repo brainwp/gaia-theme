@@ -42,3 +42,19 @@ $args = array(
 	'uploads'       => true,
 );
 add_theme_support( 'custom-header', $args );
+
+function gaia_sdk_facebook() {
+	if ( is_home() || is_front_page() ) { ?>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	<?php }
+}
+add_action( 'wp_head', 'gaia_sdk_facebook' );
+
+
