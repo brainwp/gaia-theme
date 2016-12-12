@@ -27,16 +27,22 @@ function instagram_feed() {
 	$return = instagram_api_curl_connect( "https://api.instagram.com/v1/users/" . $user_id . "/media/recent?access_token=" . $access_token );
 
 	//var_dump( $return ); // if you want to display everything the function returns
-
-	echo "<img src=". $user_search->data[0]->profile_picture . " alt=" . $user_search->data[0]->username . ">";
+	
+	echo '<div class="instagram-feed">';
+	
+	echo '<div class="title">';
+		echo "<img src=" . $user_search->data[0]->profile_picture . " alt=" . $user_search->data[0]->username . ">";
+		echo "<span>" . $user_search->data[0]->username . "</span>";
+	echo '</div>';
 	 
 	$count = 0;
 	foreach ( $return->data as $post ) {
 		echo '<a href="' . $post->images->standard_resolution->url . '" class="fancybox col-sm-3 nopadding"><img src="' . $post->images->thumbnail->url . '" /></a>';
 		$count++;
-		if ( $count === 9 ) {
+		if ( $count === 12 ) {
 			break;
 		}
 	}
+	echo '</div><!-- instagram-feed -->';
 }
 

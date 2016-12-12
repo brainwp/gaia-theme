@@ -86,7 +86,6 @@ input[type="search"]::-webkit-search-results-decoration {
 	padding-left: 0;
 	padding-right: 0;
 }
-
 /* -------------------------------------------------------------------------------- */
 /*	1. Document setup
 /* -------------------------------------------------------------------------------- */
@@ -2248,6 +2247,44 @@ div.comment {
 .page-template-page-home .loop .each:hover .mais {
 	background-color: #2A495D;
 	bottom: 5px;
+}
+.page-template-page-home .social .top-title {
+	margin-bottom: 40px;
+}
+/* Responsivo Redes Sociais */
+@media all and ( max-width: 768px ) {
+	.social .col-sm-6 {
+		float: left;
+		width: 50%;
+	}
+}
+@media all and ( max-width: 420px ) {
+	.social .col-sm-6 {
+		float: none;
+		width: 100%;
+	}
+}
+/* Instagram */
+.instagram-feed {
+	padding-left: 15px;
+}
+.instagram-feed .title {
+	background: url( 'images/instagram.png' ) 80px 40px no-repeat #2E5E86;
+	background-size: 40%;
+	overflow: hidden;
+	padding: 35px 15px 30px;
+	width: 100%;
+
+}
+.instagram-feed .title img {
+	border-radius: 50px;
+	margin-top: 5px;
+	width: 55px;
+}
+.instagram-feed .title span {
+	color: #ffffff;
+	font-size: 0.7em;
+	margin-left: 15px;
 }
 
 /* -------------------------------------------------------------------------------- */

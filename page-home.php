@@ -95,7 +95,7 @@ get_header(); ?>
 
 				</div><!-- loop -->
 			</div>
-			<div class="col-sm-6">
+			<div class="col-sm-6 social">
 				<div class="section-inner thin top-title">
 					<div class="post-header">
 						<h3 class="post-title"><?php _e( 'Redes Sociais', 'hoffman' ); ?></h3>
@@ -107,9 +107,7 @@ get_header(); ?>
 				<div class="col-sm-6 nopadding">
 				  	<?php instagram_feed();	?>
 				</div>
-
-
-			</div>
+			</div><!-- social -->
 		</div><!-- row -->
 
 	<?php endwhile; else: ?>
