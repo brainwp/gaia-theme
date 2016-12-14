@@ -2302,7 +2302,51 @@ div.comment {
 	padding: 70px 0;
 	border-top: 1px solid #eee;
 }
+.footer .section-inner {
+	max-width: 100%;
+}
+.footer .section-inner .jetpack_subscription_widget {
 
+}
+.footer .section-inner .jetpack_subscription_widget .widget-title {
+	display: inline-block;
+	float: left;
+	margin-bottom: 10px;
+	padding-top: 30px;
+	width: 10%;
+}
+.footer .section-inner .jetpack_subscription_widget #subscribe-text {
+	font-size: 0.9em;
+	padding-bottom: 5px;
+}
+.footer .section-inner .jetpack_subscription_widget form {
+	display: inline-block;
+	float: left;
+	width: 90%;
+}
+.footer .section-inner .jetpack_subscription_widget form #subscribe-email {
+	float: left;
+	width: 90%;
+}
+.footer .section-inner .jetpack_subscription_widget form #subscribe-email input {
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	padding: 10px;
+	width: 98%;
+}
+.footer .section-inner .jetpack_subscription_widget form #subscribe-submit {
+	float: left;
+	width: 10%;
+}
+.footer .section-inner .jetpack_subscription_widget form #subscribe-submit input[type="submit"] {
+	background-color: #2A495D;
+	border: 1px solid #2A495D;
+	border-radius: 3px;
+	color: #ffffff;
+	cursor: pointer;
+	padding: 10px;
+	width: 100%;
+}
 .widget + .widget { margin-top: 40px; }
 
 .widget-title {
