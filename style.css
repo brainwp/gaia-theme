@@ -2248,6 +2248,12 @@ div.comment {
 	background-color: #2A495D;
 	bottom: 5px;
 }
+.page-template-page-home .post-title {
+	text-align: center;
+}
+.page-template-page-home .post-header:after {
+	margin: 0 auto 20px;
+}
 .page-template-page-home .social .top-title {
 	margin-bottom: 40px;
 }

@@ -3,36 +3,51 @@
 	<div class="footer">
 			
 		<div class="section-inner">
-		
-			<?php if ( is_active_sidebar( 'footer-a' ) ) : ?>
+
+			<?php if ( is_front_page() ): ?>
+
+				<?php if ( is_active_sidebar( 'footer-newsletter' ) ) : ?>
+					
+					<div class="widgets col-sm-12 nopadding">
+						
+						<?php dynamic_sidebar( 'footer-newsletter' ); ?>
+						
+					</div>	
+
+				<?php endif; ?>
 			
-				<div class="column column-1 one-half">
+			<?php else: ?>
+			
+				<?php if ( is_active_sidebar( 'footer-a' ) ) : ?>
 				
-					<div class="widgets">
-			
-						<?php dynamic_sidebar( 'footer-a' ); ?>
-											
+					<div class="column column-1 one-half">
+					
+						<div class="widgets">
+				
+							<?php dynamic_sidebar( 'footer-a' ); ?>
+												
+						</div>
+						
 					</div>
 					
-				</div>
-				
-			<?php endif; ?> <!-- /footer-a -->
-				
-			<?php if ( is_active_sidebar( 'footer-b' ) ) : ?>
-			
-				<div class="column column-2 one-half">
-				
-					<div class="widgets">
-			
-						<?php dynamic_sidebar( 'footer-b' ); ?>
-											
-					</div> <!-- /widgets -->
+				<?php endif; ?> <!-- /footer-a -->
 					
-				</div>
+				<?php if ( is_active_sidebar( 'footer-b' ) ) : ?>
 				
-			<?php endif; ?> <!-- /footer-b -->
+					<div class="column column-2 one-half">
+					
+						<div class="widgets">
+				
+							<?php dynamic_sidebar( 'footer-b' ); ?>
+												
+						</div> <!-- /widgets -->
+						
+					</div>
+					
+				<?php endif; ?> <!-- /footer-b -->
+
+			<?php endif ?>
 								
-			
 			<div class="clear"></div>
 		
 		</div> <!-- /footer-inner -->

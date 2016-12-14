@@ -25,6 +25,15 @@ function gaia_widget_areas_reg() {
 	  'after_widget' => '</div><div class="clear"></div></div>'
 	));
 	register_sidebar(array(
+	  'name' => __( 'Footer Newsletter', 'gaia' ),
+	  'id' => 'footer-newsletter',
+	  'description' => __( 'Widgets nessa area aparecerao apenas na home, no Rodape.', 'gaia' ),
+	  'before_title' => '<h3 class="widget-title">',
+	  'after_title' => '</h3>',
+	  'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
+	  'after_widget' => '</div><div class="clear"></div></div>'
+	));
+	register_sidebar(array(
 	  'name' => __( 'Footer D', 'gaia' ),
 	  'id' => 'footer-d',
 	  'description' => __( 'Widgets nessa area aparecerao na coluna direita do Rodape.', 'gaia' ),
