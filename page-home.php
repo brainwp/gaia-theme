@@ -12,7 +12,9 @@ get_header(); ?>
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-		<h2 class="frase">Núcleo de atividades em Psiquiatria e Práticas Artísticas</h2>
+		<h2 class="frase">
+			<span>Núcleo de atividades em Psiquiatria e Práticas Artísticas</span>
+		</h2><!-- frase -->
 
 		<div class="col-sm-6">
 			Vídeo

@@ -2158,13 +2158,19 @@ div.comment {
 	font-family: 'Raleway', sans-serif;
 }
 .page-template-page-home .frase {
+	background: url( images/bg-frase.png ) repeat-x;
 	display: block;
-	font-size: 2em;
+	font-size: 1.4em;
+	font-style: italic;
 	margin: 0 auto;
-	max-width: 600px;
-	text-align: center;
-	padding: 30px 15px;
+	text-align: right;
+	padding: 30px 0 30px 15px;
 	width: 100%;
+}
+.page-template-page-home .frase span {
+	background-color: #fff;
+	overflow: hidden;
+	padding-left: 15px;
 }
 .page-template-page-home .resumo {
 	display: block;
