@@ -74,3 +74,6 @@ require_once( get_stylesheet_directory() . '/inc/instagram.php' );
 
 //Add Module Slider
 require_once( get_stylesheet_directory() . '/inc/slider/mod-slider.php' );
+
+//Add image size
+add_image_size( 'custom_brasa_slider_570x320px', 570, 320, array( 'center', 'center' ) );

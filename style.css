@@ -2263,6 +2263,18 @@ div.comment {
 .page-template-page-home .social .top-title {
 	margin-bottom: 40px;
 }
+.page-template-page-home .slick-dots li button:before {
+	font-size: 12px;
+}
+.page-template-page-home .col-md-12.is_slider.slick-initialized.slick-slider {
+	padding: 0
+}
+.page-template-page-home .slick-dots {
+	bottom: -25px;
+}
+.page-template-page-home .slick-dots li {
+	width: 8px;
+}
 /* Responsivo Redes Sociais */
 @media all and ( max-width: 768px ) {
 	.social .col-sm-6 {

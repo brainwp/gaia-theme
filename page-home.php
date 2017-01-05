@@ -16,19 +16,30 @@ get_header(); ?>
 			<span>Núcleo de atividades em Psiquiatria e Práticas Artísticas</span>
 		</h2><!-- frase -->
 
-		<div class="col-sm-6">
-			<?php
-				$args = array(
-			    	'order' => 'ASC',
-			    	'orderby' => 'menu_order',
-			    	'posts_per_page' => -1
-				);
-			  	loop_slider( $args );
-			?>
-		</div>
-		<div class="col-sm-6">
-			Imagens
-		</div>
+		<div class="row">
+
+			<div class="col-sm-6">
+				<?php
+					$args = array(
+				    	'order' => 'ASC',
+				    	'orderby' => 'menu_order',
+				    	'posts_per_page' => -1
+					);
+				  	loop_slider( $args );
+				?>
+			</div><!-- col-sm-6 -->
+			<div class="col-sm-6">
+				<?php
+				  	$shortcode = get_theme_mod( 'slider_shortcode' );
+				  	if ( !empty( $shortcode ) ) {
+				  		echo do_shortcode( $shortcode );
+				  	}
+				?>
+			</div><!-- col-sm-6 -->
+
+		</div><!-- row -->
+
+		<div class="clear"></div>
 
 		<div class="resumo">
 			<div class="section-inner thin top-title">

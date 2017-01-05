@@ -21,6 +21,11 @@ class Gaia_Customize {
 		   	'capability'	=> 'edit_theme_options',
 		    'transport'		=> 'postMessage',
 		) );
+		$wp_customize->add_setting( 'slider_shortcode' , array(
+		    'type'			=> 'theme_mod',
+		   	'capability'	=> 'edit_theme_options',
+		    'transport'		=> 'postMessage',
+		) );
 
             
       	//3. Finally, we define the control itself (which links a setting to a section and renders the HTML controls)...
@@ -39,6 +44,15 @@ class Gaia_Customize {
 				'label'    => __( 'Instagram Token', 'gaia' ),
 				'section'  => 'home_gaia',
 				'settings' => 'instagram_token',
+				'type'     => 'text',
+			)
+		);
+		$wp_customize->add_control(
+			'slider_shortcode', 
+			array(
+				'label'    => __( 'Slider Shortcode', 'gaia' ),
+				'section'  => 'home_gaia',
+				'settings' => 'slider_shortcode',
 				'type'     => 'text',
 			)
 		);
