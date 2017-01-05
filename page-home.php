@@ -17,7 +17,14 @@ get_header(); ?>
 		</h2><!-- frase -->
 
 		<div class="col-sm-6">
-			Vídeo
+			<?php
+				$args = array(
+			    	'order' => 'ASC',
+			    	'orderby' => 'menu_order',
+			    	'posts_per_page' => -1
+				);
+			  	loop_slider( $args );
+			?>
 		</div>
 		<div class="col-sm-6">
 			Imagens

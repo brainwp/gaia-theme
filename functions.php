@@ -66,8 +66,11 @@ function gaia_sdk_facebook() {
 }
 add_action( 'wp_head', 'gaia_sdk_facebook' );
 
-// Add Customizer
+// Add customizer
 require_once( get_stylesheet_directory() . '/inc/customizer.php' );
 
 //Add Instagram Feed
 require_once( get_stylesheet_directory() . '/inc/instagram.php' );
+
+//Add Module Slider
+require_once( get_stylesheet_directory() . '/inc/slider/mod-slider.php' );
