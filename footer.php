@@ -56,41 +56,44 @@
 
 <?php endif; ?>
 
+<div class="navigation bg-blue in-footer">
+		
+	<div class="section-inner">
+		<ul class="main-menu">
+			
+			<?php if ( has_nav_menu( 'primary' ) ) {
+																
+				wp_nav_menu( array( 
+				
+					'container' => '', 
+					'items_wrap' => '%3$s',
+					'theme_location' => 'primary'
+												
+				) ); } else {
+			
+				wp_list_pages( array(
+				
+					'container' => '',
+					'title_li' => ''
+				
+				));
+				
+			} ?>
+			
+			<div class="clear"></div>
+				
+		 </ul>
+				
+	</div> <!-- /section-inner -->
+		
+</div> <!-- /navigation -->
+
 <div class="credits">
 
 	<div class="section-inner">
 	
 		<?php get_template_part( 'menu', 'social' ); ?>
 	
-		<div class="fleft">
-		
-			<ul class="credits-menu">
-
-						
-				<?php if ( has_nav_menu( 'primary' ) ) {
-																	
-					wp_nav_menu( array( 
-					
-						'container' => '', 
-						'items_wrap' => '%3$s',
-						'theme_location' => 'primary',
-						'depth' => '1'
-													
-					) ); } else {
-				
-					wp_list_pages( array(
-					
-						'container' => '',
-						'title_li' => ''
-					
-					));
-					
-				} ?>
-					
-			 </ul>
-		
-			
-		</div> <!-- /fleft -->
 		
 	<div class="fleft-footer-widgets">
 	

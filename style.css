@@ -2315,7 +2315,16 @@ div.comment {
 /*	14.	Footer
 /* -------------------------------------------------------------------------------- */
 
-
+.navigation.in-footer {
+	background-color: #f1f1f1;
+	position: relative;
+}
+.navigation.in-footer .main-menu > li > a {
+	color: #2A495D;
+}
+.navigation.in-footer .main-menu > li > a:hover {
+	color: #ffffff;
+}
 .footer {
 	padding: 70px 0;
 	border-top: 1px solid #eee;
@@ -2742,34 +2751,24 @@ a.search-button:hover:before { color: #2A495D !important; }
 /* -------------------------------------------------------------------------------- */
 /*	15.	Credits
 /* -------------------------------------------------------------------------------- */
-
-
 .credits {
 	padding: 40px 0;
 	background: url("images/bg-footer-azul-claro.jpg") no-repeat scroll center top #3E5F72;
 	background-size: cover;
-	border-top: 1px solid #eee;
 	color: #FFF;
 	height: auto;
-        margin-bottom: -20px;
+    margin-bottom: -20px;
 }
-
 img#wpstats { display: none !important; } /* silly wp stats :) */
-
 .credits .fleft { max-width: 100%; }
-
 .credits .fleft-footer-widgets {
 	width: 62%;
 }
-
 .credits .fright { max-width: 100%; }
-
-
 .credits-menu { 
 	margin-bottom: 50px;
 	margin-right: 250px;
  }
-
 .credits-menu li { 
 	float: left; 
 	font-size: 0.9em;
@@ -2786,30 +2785,22 @@ img#wpstats { display: none !important; } /* silly wp stats :) */
 	text-transform: uppercase;
 	color: #DDD !important;
 }
-
 .credits-menu a:hover { 
 	color: #FFF !important;
 }
-
 .credits .fleft-footer-widgets {
 	width: 62%;
 }
-
 .credits .widget-title , .credits .textwidget {
-
 	color: #FFF;
 	margin-bottom: 8px;
 	font-size: 0.95em;
 }
-
 .credits p.developed-by {
-
 	color: #FFF;
 	font-size: 0.6em;
-	margin-top: 26%;
+	margin-top: 30%;
 }
-
-
 p.developed-by a.logo-brasa {
 	padding: 0;
 	margin-left: 5px;
@@ -2820,7 +2811,6 @@ p.developed-by a.logo-brasa {
 	height: 41px;
 	display: block;
 	float: right;
-	
 }
 
 /* Menu social --------------------------------------- */
