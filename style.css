@@ -2851,7 +2851,6 @@ p.developed-by a.logo-brasa {
 
 @media (max-width: 1100px) {
 	
-	
 	/* Navigation --------------------------------------- */
 	
 	/* fix submenu hover on touch */
@@ -2867,13 +2866,23 @@ p.developed-by a.logo-brasa {
 	.main-menu ul li:hover > ul { 
 		display: block;
 	}
-	
+
+	/* 13. Home --------------------------------------- */
+	.page-template-page-home .frase span {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	/* 14. Footer --------------------------------------- */
+	.footer {
+		padding-left: 15px;
+		padding-right: 15px;	
+	}
 	
 }
 
 
 @media (max-width: 1030px) {
-
 
 	/* Post content --------------------------------------- */
 	
@@ -3016,8 +3025,26 @@ p.developed-by a.logo-brasa {
 		display: none;
 	}
 
-}
+	/* 13. Home --------------------------------------- */
+	.page-template-page-home .frase {
+		background: none;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.page-template-page-home .frase span {
+		display: block;
+		overflow: hidden;
+		text-align: center;
+		width: 100%;
+	}
+	.page-template-page-home .loop .each {
+		margin-bottom: 40px;
+	}
+	.instagram-feed img {
+		width: 50%;
+	}
 
+}
 
 @media (max-width: 600px) {
 
@@ -3240,9 +3267,26 @@ p.developed-by a.logo-brasa {
 	
 	.infinite-loader,
 	#infinite-handle { margin-bottom: 45px; }
-	
+
 	
 	/* Footer --------------------------------------- */
+	.footer .section-inner .jetpack_subscription_widget .widget-title {
+		float: none;
+		text-align: center;
+		padding-top: 0;
+		width: 100%;
+	}
+	.footer .section-inner .jetpack_subscription_widget form {
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 100%;
+	}
+	.footer .section-inner .jetpack_subscription_widget form #subscribe-email {
+		width: 70%;
+	}
+	.footer .section-inner .jetpack_subscription_widget form #subscribe-submit {
+		width: 30%;
+	}
 	
 	
 	.footer { padding: 45px 0; }
@@ -3352,6 +3396,16 @@ p.developed-by a.logo-brasa {
 	.menu-social a {
 	    position: relative;
 	    margin-left: 0;
+	}
+	.social .col-sm-6 {
+		float: none;
+		width: 100%;
+	}
+	.social .col-sm-6 .instagram-feed {
+		padding: 30px 15px 0;
+	}
+	.social .col-sm-6 .textwidget {
+		text-align: center;
 	}
 
 
