@@ -684,6 +684,10 @@ body a,
 
 .result-inner  { padding: 20px 0; }
 
+#sidebar {
+	padding-top: 155px;
+}
+
 /* Featured media --------------------------------------- */
 
 
@@ -2331,9 +2335,9 @@ div.comment {
 }
 .footer .section-inner {
 	max-width: 100%;
+	position: initial;
 }
 .footer .section-inner .jetpack_subscription_widget {
-
 }
 .footer .section-inner .jetpack_subscription_widget .widget-title {
 	display: inline-block;
@@ -3435,11 +3439,9 @@ p.developed-by a.logo-brasa {
 	
 	/* Blog --------------------------------------- */
 	
-	
 	.author-meta-aside { width: 40px; }
 	
 	.author-meta-inner { margin-left: 55px; }
-	
 	
 	/* Post content --------------------------------------- */
 	

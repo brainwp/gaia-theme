@@ -4,7 +4,7 @@
 																	                    
 	<?php if (have_posts()) : ?>
 	
-		<div class="posts" id="posts">
+		<div class="posts col-sm-9" id="posts">
 	
 			<?php
 			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -33,6 +33,15 @@
 		<?php endif; ?>
 		
 	</div> <!-- /posts -->
+
+	
+	<aside id="sidebar" class="col-sm-3" role="complementary">
+		<?php
+			if ( ! dynamic_sidebar( 'blog-sidebar' ) ) {
+				dynamic_sidebar( 'blog-sidebar' );
+			}
+		?>
+	</aside><!-- #sidebar -->
 	
 	<?php if ( $wp_query->max_num_pages > 1 ) : ?>
 	
