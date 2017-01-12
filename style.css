@@ -2168,7 +2168,7 @@ div.comment {
 	font-style: italic;
 	margin: 0 auto;
 	text-align: right;
-	padding: 30px 0 30px 15px;
+	padding: 40px 0 40px 15px;
 	width: 100%;
 }
 .page-template-page-home .frase span {
@@ -2320,24 +2320,20 @@ div.comment {
 /* -------------------------------------------------------------------------------- */
 
 .navigation.in-footer {
-	background-color: #f1f1f1;
 	position: relative;
 }
 .navigation.in-footer .main-menu > li > a {
-	color: #2A495D;
 }
 .navigation.in-footer .main-menu > li > a:hover {
-	color: #ffffff;
 }
 .footer {
-	padding: 70px 0;
-	border-top: 1px solid #eee;
+	background-color: #eeeeee;
+	margin: 25px auto 45px;
+	padding: 35px 0;
 }
 .footer .section-inner {
 	max-width: 100%;
 	position: initial;
-}
-.footer .section-inner .jetpack_subscription_widget {
 }
 .footer .section-inner .jetpack_subscription_widget .widget-title {
 	display: inline-block;
@@ -2348,7 +2344,7 @@ div.comment {
 }
 .footer .section-inner .jetpack_subscription_widget #subscribe-text {
 	font-size: 0.9em;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 }
 .footer .section-inner .jetpack_subscription_widget form {
 	display: inline-block;

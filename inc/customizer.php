@@ -11,6 +11,11 @@ class Gaia_Customize {
 		);
       
       	//2. Register new settings to the WP database...
+      	$wp_customize->add_setting( 'frase_home' , array(
+		    'type'			=> 'theme_mod',
+		   	'capability'	=> 'edit_theme_options',
+		    'transport'		=> 'postMessage',
+		) );
       	$wp_customize->add_setting( 'instagram_user' , array(
 		    'type'			=> 'theme_mod',
 		   	'capability'	=> 'edit_theme_options',
@@ -29,6 +34,15 @@ class Gaia_Customize {
 
             
       	//3. Finally, we define the control itself (which links a setting to a section and renders the HTML controls)...
+      	$wp_customize->add_control(
+			'frase_home', 
+			array(
+				'label'    => __( 'Frase da Home', 'gaia' ),
+				'section'  => 'home_gaia',
+				'settings' => 'frase_home',
+				'type'     => 'text',
+			)
+		);
       	$wp_customize->add_control(
 			'instagram_user', 
 			array(

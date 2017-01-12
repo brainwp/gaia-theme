@@ -12,8 +12,10 @@ get_header(); ?>
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+		<?php $frase = get_theme_mod( 'frase_home', 'Núcleo de atividades em Psiquiatria e Práticas Artísticas' ); ?>
+
 		<h2 class="frase">
-			<span>Núcleo de atividades em Psiquiatria e Práticas Artísticas</span>
+			<span><?php echo $frase; ?></span>
 		</h2><!-- frase -->
 
 		<div class="row">
@@ -53,7 +55,7 @@ get_header(); ?>
 		<div class="clear"></div>
 
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-sm-6 nopadding">
 				<div class="section-inner thin top-title">
 					<div class="post-header">
 						<h3 class="post-title"><?php _e( 'Blog', 'hoffman' ); ?></h3>
