@@ -93,9 +93,6 @@
 			<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'title' ) ); ?></a>
 		</h1>
 	</div>
-	<div class="fright">
-		<div class="blog-description"><?php echo esc_attr( get_bloginfo( 'description' ) ); ?></div>
-	</div>		
 						
 				<div class="clear"></div>
 								

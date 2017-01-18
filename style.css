@@ -2164,8 +2164,6 @@ div.comment {
 .page-template-page-home .frase {
 	background: url( images/bg-frase.png ) repeat-x;
 	display: block;
-	font-size: 1.4em;
-	font-style: italic;
 	margin: 0 auto;
 	text-align: right;
 	padding: 40px 0 40px 15px;
@@ -2173,8 +2171,12 @@ div.comment {
 }
 .page-template-page-home .frase span {
 	background-color: #fff;
+	color: #666;
+	font-size: 1.4em;
+	font-weight: 800;
 	overflow: hidden;
 	padding-left: 15px;
+	text-transform: uppercase;
 }
 .page-template-page-home .resumo {
 	display: block;
