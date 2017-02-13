@@ -44,12 +44,25 @@ get_header(); ?>
 		<div class="clear"></div>
 
 		<div class="resumo">
+
+			<?php
+			  	$title = get_theme_mod( 'frase_introducao_home' );
+			  	if( !empty( $title ) ) :
+			?>
 			<div class="section-inner thin top-title">
 				<div class="post-header">
-					<h2 class="post-title"><?php the_title(); ?></h2>
+					<h2 class="post-title"><?php echo apply_filters( 'the_title', $title ); ?></h2>
 				</div> <!-- /post-header section -->
 			</div>
-			<?php the_excerpt(); ?>
+			<?php endif; ?>
+
+			<?php
+			  	$introducao = get_theme_mod( 'introducao_home' );
+			  	if( !empty( $introducao ) ) {
+			  		echo apply_filters( 'the_content', $introducao );
+			  	}
+			?>
+			
 		</div><!-- resumo -->
 
 		<div class="clear"></div>

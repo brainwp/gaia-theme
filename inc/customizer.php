@@ -16,6 +16,20 @@ class Gaia_Customize {
 		   	'capability'	=> 'edit_theme_options',
 		    'transport'		=> 'postMessage',
 		) );
+		$wp_customize->add_setting( 'frase_introducao_home' , array(
+		    'type'			=> 'theme_mod',
+		   	'capability'	=> 'edit_theme_options',
+		    'transport'		=> 'postMessage',
+		) );
+		$wp_customize->add_setting( 'introducao_home' , array(
+		    'type'			=> 'theme_mod',
+		   	'capability'	=> 'edit_theme_options',
+		    'transport'		=> 'postMessage',
+		) );
+
+
+
+
       	$wp_customize->add_setting( 'instagram_user' , array(
 		    'type'			=> 'theme_mod',
 		   	'capability'	=> 'edit_theme_options',
@@ -37,9 +51,36 @@ class Gaia_Customize {
       	$wp_customize->add_control(
 			'frase_home', 
 			array(
-				'label'    => __( 'Frase da Home', 'gaia' ),
+				'label'    => __( 'Frase do Cabeçalho', 'gaia' ),
 				'section'  => 'home_gaia',
 				'settings' => 'frase_home',
+				'type'     => 'text',
+			)
+		);
+		$wp_customize->add_control(
+			'frase_introducao_home', 
+			array(
+				'label'    => __( 'Frase da Introdução na Home', 'gaia' ),
+				'section'  => 'home_gaia',
+				'settings' => 'frase_introducao_home',
+				'type'     => 'text',
+			)
+		);
+		$wp_customize->add_control(
+			'introducao_home', 
+			array(
+				'label'    => __( 'Introdução na Home', 'gaia' ),
+				'section'  => 'home_gaia',
+				'settings' => 'introducao_home',
+				'type'     => 'textarea',
+			)
+		);
+		$wp_customize->add_control(
+			'slider_shortcode', 
+			array(
+				'label'    => __( 'Slider Shortcode', 'gaia' ),
+				'section'  => 'home_gaia',
+				'settings' => 'slider_shortcode',
 				'type'     => 'text',
 			)
 		);
@@ -58,15 +99,6 @@ class Gaia_Customize {
 				'label'    => __( 'Instagram Token', 'gaia' ),
 				'section'  => 'home_gaia',
 				'settings' => 'instagram_token',
-				'type'     => 'text',
-			)
-		);
-		$wp_customize->add_control(
-			'slider_shortcode', 
-			array(
-				'label'    => __( 'Slider Shortcode', 'gaia' ),
-				'section'  => 'home_gaia',
-				'settings' => 'slider_shortcode',
 				'type'     => 'text',
 			)
 		);
