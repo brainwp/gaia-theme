@@ -3478,3 +3478,16 @@ p.developed-by a.logo-brasa {
 }
 
 
+/* WP Instagram Widget */
+body.home .widget {
+	float: left;
+	margin-top: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 50%;
+}
+body.home .null-instagram-feed li {
+	float: left;
+	padding: 0;
+	width: 33.33%;
+}

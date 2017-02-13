@@ -136,11 +136,8 @@ get_header(); ?>
 						<h3 class="post-title"><?php _e( 'Redes Sociais', 'hoffman' ); ?></h3>
 					</div> <!-- /post-header section -->
 				</div>
-				<div class="col-sm-6 nopadding">
+				<div class="col-sm-12 nopadding">
 					<?php dynamic_sidebar( 'home-rede-sociais' ); ?>
-				</div>
-				<div class="col-sm-6 nopadding">
-				  	<?php instagram_feed();	?>
 				</div>
 			</div><!-- social -->
 		</div><!-- row -->
