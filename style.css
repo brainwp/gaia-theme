@@ -3471,12 +3471,9 @@ p.developed-by a.logo-brasa {
 	
 	
 	/* Pagination --------------------------------------- */
-	
-	
-	.archive-nav span { display: none; }
-	
-}
 
+	.archive-nav span { display: none; }
+}
 
 /* WP Instagram Widget */
 body.home .widget {
@@ -3486,8 +3483,32 @@ body.home .widget {
 	padding-right: 15px;
 	width: 50%;
 }
-body.home .null-instagram-feed li {
+body.home .widget.null-instagram-feed h3 {
+	background: url( 'images/bg-instagram.png' ) center center no-repeat #365989;
+	background-size: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-indent: -999999px;
+}
+body.home .widget.null-instagram-feed ul li {
 	float: left;
-	padding: 0;
-	width: 33.33%;
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    width: 33.33%;
+}
+body.home .widget.null-instagram-feed img {
+	height: auto;
+	margin-bottom: -5px;
+    max-width: 100%;
+    width: auto;
+}
+body.home .widget.null-instagram-feed p.clear {
+	padding-top: 10px;
+}
+body.home .footer .widget.jetpack_subscription_widget,
+body.home .credits .widget.widget_text {
+	width: 100%;
 }
