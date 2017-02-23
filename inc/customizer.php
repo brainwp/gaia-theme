@@ -84,24 +84,6 @@ class Gaia_Customize {
 				'type'     => 'text',
 			)
 		);
-      	$wp_customize->add_control(
-			'instagram_user', 
-			array(
-				'label'    => __( 'Instagram User', 'gaia' ),
-				'section'  => 'home_gaia',
-				'settings' => 'instagram_user',
-				'type'     => 'text',
-			)
-		);
-		$wp_customize->add_control(
-			'instagram_token', 
-			array(
-				'label'    => __( 'Instagram Token', 'gaia' ),
-				'section'  => 'home_gaia',
-				'settings' => 'instagram_token',
-				'type'     => 'text',
-			)
-		);
    }
 
    /**
