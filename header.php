@@ -8,6 +8,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
 																		
 		<title><?php bloginfo('name'); ?><?php wp_title('|', true, 'left'); ?></title>
+
+		<?php if ( ! get_option( 'site_icon' ) ) : ?>
+			<link href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" rel="shortcut icon" />
+		<?php endif; ?>
 		 
 		<?php wp_head(); ?>
 	
