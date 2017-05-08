@@ -10,7 +10,7 @@
 		<title><?php bloginfo('name'); ?><?php wp_title('|', true, 'left'); ?></title>
 
 		<?php if ( ! get_option( 'site_icon' ) ) : ?>
-			<link href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico" rel="shortcut icon" />
+			<link href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico" rel="shortcut icon" />
 		<?php endif; ?>
 		 
 		<?php wp_head(); ?>
